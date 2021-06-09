@@ -25,9 +25,9 @@ section {
 }
 
 section:before {
-	content: url(images/illustration-woman-online-mobile.svg);
+	content: url("images/illustration-woman-online-mobile.svg");
 	position: absolute;
-	top: -20%;
+	top: -107px;
 	margin-left: -30px;
 }
 
@@ -37,6 +37,10 @@ h1 {
 	font-size: 2.75rem;
 }
 
+.QnA-list {
+	max-width: 275px;
+}
+
 .QnA {
 	width: 100%;
 	padding: 1.3rem 0;
@@ -44,6 +48,7 @@ h1 {
 	line-height: 1.5rem;
 	display: flex;
 	justify-content: space-between;
+	cursor: pointer;
 }
 
 .QnA__text {
@@ -78,4 +83,21 @@ h1 {
 
 .QnA.active > .QnA__icon {
 	transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+	.QnA-list {
+		width: 350px;
+		max-width: 350px;
+	}
+}
+
+@media (hover: hover) {
+	.QnA.active:hover {
+		font-weight: unset;
+	}
+	.QnA:hover {
+		font-weight: bold;
+		filter: saturate(6);
+	}
 }
