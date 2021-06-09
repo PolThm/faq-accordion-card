@@ -73,9 +73,10 @@ h1 {
 .QnA__icon {
 	height: fit-content;
 	margin-left: 2rem;
+	margin-top: 4px;
 }
 
 .QnA__icon--active {
 	transform: rotate(180deg);
-	margin-top: 3px;
+
 }
