@@ -39,6 +39,7 @@ h1 {
 
 .QnA-list {
 	max-width: 275px;
+	transition: all 0.3s ease-in-out;
 }
 
 .QnA {
