@@ -15,6 +15,23 @@ body {
 section {
 	border-radius: 1.3rem;
 	margin: 2rem;
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.illustrations-desktop {
+	display: none;
+}
+
+.illustration-woman-online-desktop {
+	max-width: 100%;
+}
+
+.content {
+	border-radius: 1.3rem;
 	padding: 0 2rem 4rem 2rem;
 	background: white;
 	display: flex;
@@ -24,7 +41,7 @@ section {
 	position: relative;
 }
 
-section:before {
+.content:before {
 	content: url("images/illustration-woman-online-mobile.svg");
 	position: absolute;
 	top: -107px;
@@ -77,26 +94,13 @@ h1 {
 }
 
 .QnA__icon {
-	height: fit-content;
-	margin-left: 2rem;
+	height: max-content;
+	margin-left: 1rem;
 	margin-top: 4px;
 }
 
 .QnA.active > .QnA__icon {
 	transform: rotate(180deg);
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
-	.QnA-list {
-		width: 275px;
-	}
-}
-
-@media (min-width: 768px) {
-	.QnA-list {
-		width: 350px;
-		max-width: 350px;
-	}
 }
 
 @media (hover: hover) {
@@ -108,3 +112,33 @@ h1 {
 		filter: saturate(6);
 	}
 }
+
+@media (min-width: 480px) and (max-width: 767px) {
+	.QnA-list {
+		width: 275px;
+	}
+}
+
+@media (min-width: 768px) {
+	.illustrations-desktop {
+		display: block;
+	}
+	.content {
+		padding: 8rem;
+		align-items: flex-start;
+	}
+	.content:before {
+		display: none;
+	}
+	img.shadow-mobile {
+		display: none;
+	}
+	h1 {
+		padding: 0 0 2.5rem 0;
+	}
+	.QnA-list {
+		width: 350px;
+		max-width: 350px;
+	}
+}
+
