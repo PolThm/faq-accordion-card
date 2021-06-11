@@ -20,12 +20,11 @@ section {
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	overflow: hidden;
 }
 
 .illustrations-desktop {
 	display: none;
-	margin-left: -66px;
+	margin-left: -70px;
 }
 
 img.illustration-woman-online-desktop {
@@ -33,14 +32,11 @@ img.illustration-woman-online-desktop {
 }
 
 .content {
-	border-radius: 1.3rem;
 	padding: 0 2rem 4rem 2rem;
-	background: white;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
 }
 
 .content:before {
@@ -122,6 +118,9 @@ h1 {
 }
 
 @media (min-width: 768px) {
+	section {
+		overflow: hidden;
+	}
 	.illustrations-desktop {
 		display: block;
 	}
