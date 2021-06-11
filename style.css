@@ -20,13 +20,15 @@ section {
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
+	overflow: hidden;
 }
 
 .illustrations-desktop {
 	display: none;
+	margin-left: -66px;
 }
 
-.illustration-woman-online-desktop {
+img.illustration-woman-online-desktop {
 	max-width: 100%;
 }
 
