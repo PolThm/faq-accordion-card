@@ -13,6 +13,19 @@ body {
 }
 
 section {
+	position: relative;
+}
+
+img.illustration-box-desktop {
+	display: none;
+	position: absolute;
+	left: -6.9%;
+	top: 43%;
+	z-index: 10;
+	width: min(19vw, 191px);
+}
+
+.container {
 	border-radius: 1.3rem;
 	margin: 2rem;
 	background: white;
@@ -25,10 +38,22 @@ section {
 .illustrations-desktop {
 	display: none;
 	margin-left: -70px;
+	position: relative;
 }
 
 img.illustration-woman-online-desktop {
 	max-width: 100%;
+	z-index: 5;
+	position: relative;
+}
+
+img.shadow-desktop {
+	position: absolute;
+	top: -104%;
+	left: -104%;
+	width: 205%;
+	height: 260%;
+	z-index: 0;
 }
 
 .content {
@@ -37,6 +62,7 @@ img.illustration-woman-online-desktop {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	height: 46rem;
 }
 
 .content:before {
@@ -118,14 +144,17 @@ h1 {
 }
 
 @media (min-width: 768px) {
-	section {
+	img.illustration-box-desktop {
+		display: block;
+	}
+	.container {
 		overflow: hidden;
 	}
 	.illustrations-desktop {
 		display: block;
 	}
 	.content {
-		padding: 8rem;
+		padding: 8rem 6rem 8rem 8rem;
 		align-items: flex-start;
 	}
 	.content:before {
@@ -140,6 +169,14 @@ h1 {
 	.QnA-list {
 		width: 350px;
 		max-width: 350px;
+		overflow: auto;
+		padding-right: 2rem;
 	}
 }
 
+@media (max-width: 1000px) {
+	img.illustration-box-desktop {
+		left: -6.8vw;
+		width: 19vw;
+	}
+}
