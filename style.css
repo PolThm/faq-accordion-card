@@ -33,6 +33,7 @@ img.illustration-box-desktop {
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
+	box-shadow: 0 5px 10px 0 hsl(240, 39%, 47%);
 }
 
 .illustrations-desktop {
@@ -62,7 +63,6 @@ img.shadow-desktop {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	height: 46rem;
 }
 
 .content:before {
@@ -156,6 +156,7 @@ h1 {
 	.content {
 		padding: 8rem 6rem 8rem 8rem;
 		align-items: flex-start;
+		height: 45.6rem;
 	}
 	.content:before {
 		display: none;
