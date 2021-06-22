@@ -27,7 +27,7 @@ img.illustration-box-desktop {
 
 .container {
 	border-radius: 1.3rem;
-	margin: 2rem;
+	margin: 10rem 2rem 2rem 2rem;
 	background: white;
 	display: flex;
 	justify-content: space-between;
@@ -80,7 +80,6 @@ h1 {
 
 .QnA-list {
 	max-width: 275px;
-	transition: all 0.3s ease-in-out;
 }
 
 .QnA {
@@ -149,6 +148,7 @@ h1 {
 	}
 	.container {
 		overflow: hidden;
+		margin: 2rem;
 	}
 	.illustrations-desktop {
 		display: block;
