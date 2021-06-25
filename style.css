@@ -105,8 +105,9 @@ h1 {
 	width: 100%;
 }
 
-.question button:focus img {
-	outline: 2px solid;
+.question button:focus {
+	font-weight: bold;
+	filter: saturate(6);
 }
 
 .QnA.active > .question {
@@ -126,9 +127,7 @@ h1 {
 .QnA__icon {
 	height: max-content;
 	margin-left: 1rem;
-	margin-top: 0.2rem;
-	margin-right: -0.2rem;
-	padding: 0.2rem;
+	margin-top: 0.4rem;
 }
 
 .QnA.active > .QnA__icon {
