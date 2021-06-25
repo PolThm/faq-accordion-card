@@ -116,7 +116,7 @@ h1 {
 .answer {
 	margin-top: 0.7rem;
 	color: hsl(240, 6%, 50%);
-	/*display: none;*/
+	display: none;
 }
 
 .QnA.active > .answer {
