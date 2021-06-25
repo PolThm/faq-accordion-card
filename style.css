@@ -88,38 +88,47 @@ h1 {
 	border-bottom: 1px solid hsl(240, 5%, 91%);
 	line-height: 1.5rem;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	cursor: pointer;
-}
-
-.QnA__text {
-	display: flex;
-	flex-direction: column;
 }
 
 .question {
 	color: hsl(237, 12%, 33%);
 	font-size: 1.1rem;
+	width: 100%;
 }
 
-.QnA.active > .QnA__text > .question {
+.question button{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.question button:focus img {
+	outline: 2px solid;
+}
+
+.QnA.active > .question {
 	font-weight: bold;
 }
 
 .answer {
 	margin-top: 0.7rem;
 	color: hsl(240, 6%, 50%);
-	display: none;
+	/*display: none;*/
 }
 
-.QnA.active > .QnA__text > .answer {
+.QnA.active > .answer {
 	display: block;
 }
 
 .QnA__icon {
 	height: max-content;
 	margin-left: 1rem;
-	margin-top: 4px;
+	margin-top: 0.2rem;
+	margin-right: -0.2rem;
+	padding: 0.2rem;
 }
 
 .QnA.active > .QnA__icon {
@@ -156,7 +165,7 @@ h1 {
 	.content {
 		padding: 8rem 6rem 8rem 8rem;
 		align-items: flex-start;
-		height: 45.6rem;
+		height: 46rem;
 	}
 	.content:before {
 		display: none;
